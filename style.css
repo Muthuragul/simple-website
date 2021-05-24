@@ -1,0 +1,107 @@
+  .Slider1{
+    display:none;
+}
+
+.carousel-text li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 16px;
+  padding-left: 16px;
+  cursor: pointer;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  color:dimgray;
+  font-size: 16px;
+}
+
+.carousel-text {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: start;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+}
+
+#lihover:hover{
+  color: black;
+  background-color: gray;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width:600px){
+  .header{
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 0px;
+  }
+  .nav-bar{
+    font-size: 8px;
+    padding: 0px;
+  }
+
+  .menus{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    font-size: 25px;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 30px;
+  }
+
+  .schedule{
+    font-size: larger;
+    height: -10px;
+    width: 80px;
+    align-items: left;
+
+  }
+  .hero-image{
+    height: 50%;
+  }
+
+  .hero{
+    font-size: 1px;
+  }
+
+  *{
+    font-weight: normal;
+    /* margin-right: 1px;
+    margin-left: 1px; */
+  }
+
+  .primary{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .primary h4{
+    font-size: 16px;
+    text-align: center;
+  }
+}
